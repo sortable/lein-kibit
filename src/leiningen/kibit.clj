@@ -8,7 +8,7 @@
   [project & args]
   (let [src-paths (get-in project [:kibit :source-paths] ["rules"])
         local-repo (:local-repo project)
-        kibit-project `{:dependencies [[jonase/kibit "0.1.3"]]
+        kibit-project `{:dependencies [[jonase/kibit-sortable "0.1.4-SNAPSHOT"]]
                         :source-paths ~src-paths
                         :local-repo ~local-repo}
         paths (filter some? (concat
